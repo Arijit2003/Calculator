@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#FFD5CB">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.68">
+                <TextView
+                    android:id="@+id/result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:gravity="bottom|end"
+                    android:textSize="44sp"
+                    android:padding="25dp"
+                    android:paddingBottom="36dp"
+                    android:textColor="#000"
+                    android:background="@drawable/text_view_back"
+                    tools:text="@string/_4446544"/>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:lottie_rawRes="@raw/lottie"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"/>
+
+
+        </FrameLayout>
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:lottie_rawRes="@raw/lottie"
+                        app:lottie_loop="true"
+                        app:lottie_autoPlay="true"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+
+                            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.555"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                                <Button
+                                    android:id="@+id/_7"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+
+                                    android:layout_marginEnd="8dp"
+                                    android:onClick="onDigit"
+                                    android:text="@string/seven"
+                                    android:textColor="#000"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+                                <Button
+                                    android:id="@+id/_8"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:onClick="onDigit"
+
+                                    android:text="@string/eight"
+                                    android:textColor="#000"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+                                <Button
+                                    android:id="@+id/_9"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:onClick="onDigit"
+
+                                    android:text="@string/nine"
+                                    android:textColor="#000"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+                                <Button
+                                    android:id="@+id/divide"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+
+                                    android:layout_marginStart="8dp"
+                                    android:onClick="onOperatorAdd"
+                                    android:text="@string/divide"
+                                    android:textColor="#000"
+
+                                    android:textSize="36sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+
+                            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.444"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                                <Button
+                                    android:id="@+id/_4"
+
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+
+                                    android:layout_marginEnd="8dp"
+                                    android:onClick="onDigit"
+                                    android:text="@string/four"
+                                    android:textColor="#000"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+                                <Button
+                                    android:id="@+id/_5"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:onClick="onDigit"
+                                    android:text="@string/five"
+                                    android:textColor="#000"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+                                <Button
+                                    android:id="@+id/_6"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginStart="8dp"
+
+                                    android:layout_marginEnd="8dp"
+                                    android:onClick="onDigit"
+                                    android:text="@string/six"
+                                    android:textColor="#000"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+                                <Button
+                                    android:id="@+id/multiply"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginStart="8dp"
+
+                                    android:onClick="onOperatorAdd"
+                                    android:text="@string/multiply"
+                                    android:textColor="#000"
+
+                                    android:textSize="36sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.555"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                                <Button
+                                    android:id="@+id/_1"
+
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+
+                                    android:layout_height="75dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:onClick="onDigit"
+                                    android:text="@string/one"
+                                    android:textColor="#000"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+                                <Button
+                                    android:id="@+id/_2"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:onClick="onDigit"
+                                    android:text="@string/two"
+                                    android:textColor="#000"
+                                    android:textSize="28sp"
+
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+                                <Button
+                                    android:id="@+id/_3"
+                                    android:background="@drawable/button_background"
+
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:onClick="onDigit"
+                                    android:text="@string/three"
+                                    android:textColor="#000"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+                                <Button
+                                    android:id="@+id/minus"
+                                    android:background="@drawable/button_background"
+
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginStart="8dp"
+                                    android:onClick="onOperatorAdd"
+                                    android:text="@string/minus"
+                                    android:textColor="#000"
+
+                                    android:textSize="36sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.444"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                                <Button
+                                    android:id="@+id/equals"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:onClick="onEquals"
+                                    android:text="@string/equals"
+                                    android:textColor="#000"
+                                    android:textSize="36sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+                                <Button
+                                    android:id="@+id/_0"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:onClick="onDigit"
+                                    android:text="@string/zero"
+                                    android:textColor="#000"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+                                <Button
+                                    android:id="@+id/point"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:gravity="center"
+                                    android:onClick="onDecimalPoint"
+                                    android:text="@string/point"
+                                    android:textColor="#000"
+                                    android:textSize="36sp"
+
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+                                <Button
+                                    android:id="@+id/add"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginStart="8dp"
+                                    android:onClick="onOperatorAdd"
+                                    android:text="@string/add"
+                                    android:textColor="#000"
+
+                                    android:textSize="36sp"
+
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent">
+                                <Button
+                                    android:id="@+id/CLR"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:onClick="onDigit"
+                                    android:text="@string/C"
+                                    android:textColor="#000"
+                                    android:textSize="28sp"
+
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+
+                                <Button
+                                    android:id="@+id/paren"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:gravity="center"
+
+                                    android:onClick="parenthesis"
+                                    android:text="@string/paren"
+                                    android:textColor="#000"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#F2D4A9" />
+
+                                <ImageButton
+                                    android:id="@+id/back"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:onClick="backspace"
+                                    android:src="@drawable/ic_backspace"
+                                    android:text="@string/paren"
+                                    android:textColor="#000"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+
+                                <Button
+                                    android:id="@+id/addSub"
+                                    android:background="@drawable/button_background"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginStart="8dp"
+                                    android:onClick="addSub"
+                                    android:text="@string/addSub"
+                                    android:textColor="#000"
+                                    android:textSize="36sp"
+                                    android:textStyle="bold"
+                                    app:rippleColor="#696565" />
+                        </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+</LinearLayout>
